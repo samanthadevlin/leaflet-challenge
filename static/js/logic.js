@@ -100,7 +100,7 @@ d3.json("https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/all_week.geoj
         // loop thru the intervals to generate the colors
         for (var x = 0 ; x < magGrades.length; x++) {
             div.innerHTML +=
-                "<i style='background: " + colors[x] + "'></i> " + magGrades[x] + (magGrades[x + 1] ? '-' + magGrades[i + 1] + '<br>' : '+');
+                "<i style='background: " + colors[x] + "'></i> " + magGrades[x] + (magGrades[x + 1] ? '-' + magGrades[x + 1] + '<br>' : '+');
         }
         return div;
     };
